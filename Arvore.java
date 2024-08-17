@@ -104,6 +104,42 @@ public class Arvore {
         return null;
     }
 
+    public void printPreOrdem(No no){
+        if(no == null){
+            return;
+        }
+    
+        System.out.println(no.getDado());
+    
+        printPreOrdem(no.getEsquerda());
+    
+        printPreOrdem(no.getDireita());
+    }
+    
+    public void printEmOrdem(No no){
+        if(no == null){
+            return;
+        }
+    
+        printEmOrdem(no.getEsquerda());
+    
+        System.out.println(no.getDado());
+    
+        printEmOrdem(no.getDireita());
+    }
+
+    public void printPosOrdem(No no){
+        if(no == null){
+            return;
+        }
+    
+        printPosOrdem(no.getEsquerda());
+    
+        printPosOrdem(no.getDireita());
+    
+        System.out.println(no.getDado());
+    }
+
     public No getRaiz() {
         return raiz;
     }

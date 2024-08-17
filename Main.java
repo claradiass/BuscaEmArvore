@@ -33,6 +33,10 @@ public class Main {
 
         System.out.println(arvore.busca(21, arvore.getRaiz()).getDado());
 
+        //arvore.printPreOrdem(arvore.getRaiz());
+        //arvore.printEmOrdem(arvore.getRaiz());
+        arvore.printPosOrdem(arvore.getRaiz());
+
 
     }
 }
